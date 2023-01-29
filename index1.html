@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Movie Recommender System">
+    <meta name="author" content="Martin Kondor">
+    
+    <title>MUSIC CONCERT</title>
+
+    <!-- Icons -->
+    <link rel="icon" sizes="115x93" href="https://martinkondor.github.io/img/icon.bmp">
+    <link rel="shortcut icon" sizes="115x93" href="https://martinkondor.github.io/img/icon.bmp">
+    <link rel="apple-touch-icon" sizes="115x93" href="https://martinkondor.github.io/img/icon.bmp">
+    <!-- / Icons -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="public/css/libs/bootstrap-4.3.1.min.css">
+    <link href="public/css/main.css?v=2022062" rel="stylesheet">
+    <!-- / Styles -->
+
+</head>
+<body class="bg">
+
+    <div id="loaderSign" class="text-center">
+        <div class="spinner-border text-white" role="status" style="width: 5rem; height: 5rem;"></div>
+        <br>
+        <p class="font-weight-bold text-uppercase" style="font-size: 20px;">
+            Loading...
+        </p>
+    </div>
+
+    <div class="container-fluid text-center mt-1">
+
+        <h1 class="font-weight-bold h2 mt-4 mb-4">
+            <a href="/" style="text-decoration: none; color: white;"> 🎶 Music Concert</a>
+        </h1>
+
+        <div id="box">
+            <input id="title" type="text" class="form-control" placeholder="Type the greatest hits in music history" required="">
+            <input id="year" type="text" class="form-control mt-2" placeholder="In what year it was released? (Optional)" minlength="4" style="display: none;">
+            <button id="submit" type="submit" class="btn btn-primary mt-2 btn-block text-uppercase">Recommend Songs!</button>
+            <hr>
+
+            <div id="box-list" class="mt-4">
+
+                <p id="emptyText" class="text-muted mt-5">
+                    <i>
+                        The songs recommended for you will appear here..!!
+                    </i>
+                </p>
+
+                <h3 id="didYouMeanTitle" class="font-weight-bold mb-4">
+                    <div class="text-uppercase">
+                        Did you mean ...?
+                    </div>
+                    <p class="h5 text-muted">
+                        Choose the Songs you've listened below.
+                    </p>
+                </h3>
+
+                <h3 id="weFoundNothing" class="text-uppercase font-weight-bold mb-4">
+                    We Found No Songs With This Title
+                </h3>
+                
+                <h4 id="choosenMovie" class="mb-4"> 
+                    
+                </h4>
+
+                <div id="movie-list">
+                    <!--        
+                    <div class="movie-li">
+                        1. Movie title
+                    </div>
+                    <div class="movie-li">
+                        2. Movie title
+                    </div>
+                    <div class="movie-li">
+                        3. Movie title
+                    </div>
+                    -->
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@1.1.0/lib/bundle.min.js"></script>
+    <script src="public/js/main.js?v=2022062"></script>
+    <!-- / Scripts -->
+
+</body>
+</html>
+
+
